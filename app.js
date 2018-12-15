@@ -39,7 +39,7 @@ app.post("/login", function (req, res) {
 
 
 // LISTEN
-var PORT = 5000
+var PORT = 4000;
 app.listen(PORT, function(err){
     if(err){
         console.log(err);
