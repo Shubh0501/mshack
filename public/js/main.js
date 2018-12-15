@@ -32,6 +32,16 @@ console.log(lattitude1);
 setTimeout(function(){
     var centre = new L.LatLng(28.549948, 77.268241);
     var map=new MapmyIndia.Map("map",{ center:centre,zoomControl: true,hybrid:true });
+    var pt;
+    map.on("click", function (e)
+    {
+        pt = e.latlng;
+        console.log(pt.lat);
+        var inner_div_lat = document.getElementById("lat_click");
+        var inner_div_lng = document.getElementById("lng_click");
+        inner_div_lat.innerHTML = "Lattitude : " + pt.lat;
+        inner_div_lng.innerHTML = " Longitude : " + pt.lng;
+    });
     var marker = L.marker(centre);
 // L.marker(centre).addTo(map);
 
@@ -63,13 +73,6 @@ setTimeout(function(){
         console.log(lattitude1[i] + " " + longitude1[i] )
         var temp = new L.LatLng(lattitude1[i],longitude1[i]);
         // L.marker(temp).addTo(map);
-        var icon = L.icon(
-            {
-                iconUrl: '/images/marker.png',
-                iconRetinaUrl: '/images/marker.png',
-                iconSize: [30, 30],
-                popupAnchor: [-3, -15]
-            });
 
         showCircle();
         function showCircle() {
