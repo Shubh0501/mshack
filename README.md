@@ -1,7 +1,7 @@
 # DROME 
 Disaster can't be prevented but loss can
 
-Disaster Rescue Operation made east(DROME) is an Emergency response System which is built with an initiative to prevent loss of lifes during any disaster. 
+Disaster Rescue Operation Made Easy(DROME) is an Emergency response System which is built with an initiative to prevent loss of lifes during any disaster. 
 
 An Android app is used to collect data from users. Their data is sent to the website which is specifically designed for only authorized personnel who are going to carry out the rescue operation. Location of users are tracked in the app to provide more accurate information. If network is available in the cell phones, then the user will be asked whether they are safe at their current location or not which is going to decide the priority of operation.
 
